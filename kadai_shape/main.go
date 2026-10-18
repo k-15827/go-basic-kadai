@@ -38,11 +38,11 @@ func (r Rectangle) Perimeter() float64 {
 }
 
 func (c Circle) Area() float64 {
-	return c.Radius * c.Radius * 3.14
+	return c.Radius * c.Radius * 3.1415
 }
 
 func (c Circle) Perimeter() float64 {
-	return c.Radius * 2 * 3.14
+	return c.Radius * 2 * 3.1415
 }
 
 func validateShape(shape Shape) error {
