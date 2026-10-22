@@ -98,7 +98,8 @@ func main() {
 
 		for _, v := range data {
 			fmt.Println("--- 日記データ ---")
-			fmt.Println("日時：", v.Timestamp)
+			formatTimestamp := v.Timestamp.Format("2006-01-02 15:04:05")
+			fmt.Println("日時：", formatTimestamp)
 			fmt.Println("タイトル：", v.Title)
 			fmt.Printf("本文：\n%s\n", v.Content)
 		}
